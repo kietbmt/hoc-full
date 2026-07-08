@@ -19,32 +19,38 @@
         <table cellpadding="10">
 
             <tr>
-                <td align="right"><b>* Full Name:</b></td>
-                <td>
-                    <input type="text" name="fname" placeholder="Enter your full name" >
+                <td align="right">
+                    <label for="fname"><b>* Full Name:</b></label>
                 </td>
-            </tr>
-
-            <tr>
-                <td align="right"><b>* Email:</b></td>
                 <td>
-                    <input type="email" name="email" placeholder="Enter your Email" >
-                </td>
-            </tr>
-
-            <tr>
-                <td align="right"><b>* Age:</b></td>
-                <td>
-                    <input type="number" name="age" placeholder="Age" 
+                    <input type="text" id="fname" name="fname" placeholder="Enter your full name">
                 </td>
             </tr>
 
             <tr>
                 <td align="right">
-                    Which option best describes your current role?
+                    <label for="email"><b>* Email:</b></label>
                 </td>
                 <td>
-                    <select>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">
+                    <label for="age"><b>* Age:</b></label>
+                </td>
+                <td>
+                    <input type="number" id="age" name="age" placeholder="Age">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">
+                    <label for="role">Which option best describes your current role?</label>
+                </td>
+                <td>
+                    <select id="role" name="role">
                         <option>Student</option>
                         <option>1</option>
                         <option>2</option>
@@ -54,21 +60,28 @@
 
             <tr>
                 <td align="right">
-                    <b>* Would you like to list references?</b>
+                    <label><b>* Would you like to list references?</b></label>
                 </td>
                 <td>
-                    <input type="radio" name="ref"> Yes
-                    <br>
-                    <input type="radio" name="ref"> No
+
+                    <div>
+                        <input type="radio" id="yes" name="ref" value="Yes">
+                        <label for="yes">Yes</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="no" name="ref" value="No">
+                        <label for="no">No</label>
+                    </div>
+
                 </td>
-            </tr>
 
             <tr>
                 <td align="right">
-                    Which position would you like to apply for?
+                    <label for="position">Which position would you like to apply for?</label>
                 </td>
                 <td>
-                    <select>
+                    <select id="position" name="position">
                         <option>Select an option</option>
                         <option>Web Developer</option>
                         <option>Designer</option>
@@ -79,41 +92,49 @@
 
             <tr>
                 <td align="right" >
-                    Which programming languages do you know?
+                    <label>
+                     Which programming languages do you know?
+                    </label>
                 </td>
 
                 <td>
+
+                <div>
                     <input type="checkbox" id="languages1" name="languages1" value="Java"> 
-                    <label for="languages1">Java</label><br> 
+                    <label for="languages1">Java</label> 
+                </div>
 
                     <input type="checkbox" id="languages2" name="languages2" value="Python"> 
-                    <label for="languages2">Python</label><br> 
-
+                    <label for="languages2">Python</label>
+                <div>
                     <input type="checkbox" id="languages3" name="languages3" value="JavaScript"> 
-                    <label for="languages3">JavaScript</label><br> 
+                    <label for="languages3">JavaScript</label> 
+                </div>
 
                     <input type="checkbox" id="languages4" name="languages4" value="C++"> 
-                    <label for="languages4">C++</label><br> 
-
+                    <label for="languages4">C++</label>
+                <div>
                     <input type="checkbox" id="languages5" name="languages5" value="Swift"> 
-                    <label for="languages5">Swift</label><br> 
+                    <label for="languages5">Swift</label>
+                </div>
 
                     <input type="checkbox" id="languages6" name="languages6" value="Ruby">
-                     <label for="languages6">Ruby</label><br>
-
+                    <label for="languages6">Ruby</label>
+                <div>
                     <input type="checkbox" id="languages7" name="languages7" value=".NET"> 
-                    <label for="languages7">.NETt</label><br>
+                    <label for="languages7">.NETt</label>
+                </div>
+
                 </td>
             </tr>
 
             <tr>
                 <td align="right">
-                    Any Comments?
+                    <label for="comments">Any Comments?</label>
                 </td>
 
                 <td>
-                    <textarea
-                        placeholder="Enter your comment here..."></textarea>
+                    <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
                 </td>
             </tr>
 
