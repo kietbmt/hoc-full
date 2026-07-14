@@ -1,0 +1,84 @@
+*{
+    padding:0;
+    margin: 0;
+}
+/* top */
+.desk-menu{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0px 200px; 
+    border-bottom:1px solid #ddd;
+    font-family: "Poppins", sans-serif;
+}
+.tab{
+    display: flex;
+    padding: 10px;
+
+}
+.menu  {
+    list-style: none;
+    display: flex;
+    
+}
+.menu li a {
+    text-decoration: none; 
+    color: black;
+    padding: 14px 30px;
+}
+.menu a{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* bottom */
+.header-bottom{
+    display:flex;
+    align-items:center;
+    padding: 0px 200px;
+    justify-content:space-between; 
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.bar-search{
+    width:630px;
+    height:48px;
+    display:flex;
+    border:1px solid #66c59a;
+    border-radius:4px;
+    overflow:hidden;
+}
+.bar-search input{
+    padding:0 18px;
+    width: 600px;
+    border:none;
+    outline: none;
+}
+.bar-search select{
+    width:130px;
+    border-left: 1px solid rgb(51, 151, 126);
+    border-right: none;
+    outline: none;
+}
+.bar-search button{
+    background-color: rgb(0, 0, 0);
+    border:none;
+    outline: none;
+    width:60px;
+}
+
+.bottom-icon{
+    display: flex;
+    list-style: none;
+}
+.bottom-icon li a{
+    display: flex;
+    text-decoration: none; 
+    color: black;
+    padding: 14px 15px;
+}
